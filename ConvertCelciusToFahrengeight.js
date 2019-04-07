@@ -9,3 +9,14 @@ Use the algorithm mentioned above to help convert the Celsius temperature to Fah
 Don't worry too much about the function and return statements as they will be covered in future challenges.
 For now, only use operators that you have already learned.
 */
+
+//Формула	(0 °C × 9/5) + 32 = 32 °F
+
+
+
+function convertToF(celsius) {
+  let fahrenheit = ((celsius * 9/5) + 32);
+  return fahrenheit;
+}
+
+convertToF(30);
