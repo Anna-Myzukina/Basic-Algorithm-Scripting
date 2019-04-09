@@ -13,3 +13,11 @@ Only integers greater than or equal to zero will be supplied to the function.
 Remember to use Read-Search-Ask if you get stuck. Write your own code.
 */
 
+function factorialize(num) {
+  if (num === 0 ){
+    return 1 ;
+  }
+  return num * factorialize (num - 1);
+}
+
+factorialize(5);
