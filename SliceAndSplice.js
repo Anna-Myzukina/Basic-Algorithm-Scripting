@@ -11,3 +11,18 @@ Return the resulting array. The input arrays should remain the same after the fu
 Remember to use Read-Search-Ask if you get stuck. Write your own code.
 
 */
+
+function frankenSplice(arr1, arr2, n) {
+  // It's alive. It's alive!
+let changeArray = arr2.slice();
+
+for(let i = 0; i < arr1.length; i++){
+  changeArray.splice(n, 0, arr1[i]);
+  n++;
+}
+
+
+  return changeArray;
+}
+
+frankenSplice([1, 2, 3], [4, 5, 6], 1);
